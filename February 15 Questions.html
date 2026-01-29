@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .container {
+        max-width: 800px;
+        margin: auto;
+        color: #000;
+        padding: 0 12px;
+    }
+
+    .svg-wrapper {
+        text-align: center;
+        margin: -6px 0 6px 0;
+    }
+
+    .svg-wrapper img {
+        display: inline-block;
+    }
+
+    .last-page-footer {
+        font-family: Verdana, sans-serif;
+        font-size: 9pt;
+        color: #283776;
+        text-align: center;
+        margin-top: 50px;
+        line-height: 1.4;
+    }
+
+    /* Superscript bold verse numbers (kept for future use, unused now) */
+    .verse-num {
+        font-weight: bold;
+        font-size: 0.65em;
+        vertical-align: super;
+        line-height: 0;
+    }
+
+    /* Print button styling */
+    .print-btn {
+        font-size: 10pt;
+        padding: 4px 10px;
+        border: 1px solid #283776;
+        background: #fff;
+        color: #283776;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 10px 0 12px 0;
+    }
+
+    .print-btn:hover {
+        background: #f0f0f0;
+    }
+
+    /* PRINT‑ONLY FIXES */
+    @media print {
+
+        @page {
+            margin-bottom: 0.3in;
+        }
+
+        /* Hide print button */
+        .print-btn {
+            display: none;
+        }
+
+        /* Manual page-break class (use when needed) */
+        .page-break-after {
+            page-break-after: always;
+            break-after: page;
+        }
+
+        .last-page-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 4pt 0;
+            text-align: center;
+            background: none;
+
+            /* Prevent Chrome/Edge from dropping the footer */
+            z-index: 9999;
+            transform: translateZ(0);
+        }
+
+        body {
+            counter-reset: page;
+            overflow: visible !important;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="svg-wrapper">
+<img src="https://res.cloudinary.com/dsaksgdqw/image/upload/v1769352060/MStar_logo_vyyg6p.png"
+     alt="Morning Star Logo"
+     width="90"
+     height="91"
+     style="display: inline-block;">
+
+</div>
+
+<p style="text-align: center; margin: 0 0 5px 0; font-size: clamp(1.2rem, 5vw, 14pt); font-weight: bold; line-height: 1.0; letter-spacing: 0.03em;">
+    Morning Star Las Cruces
+</p>
+
+<p style="text-align: center; margin: 0 0 5px 0; font-size: clamp(1.2rem, 5vw, 14pt); font-weight: bold; line-height: 1.0; letter-spacing: 0.03em;">
+    2026 Discussion Questions
+</p>
+
+<button class="print-btn" onclick="window.print()">Print</button>
+
+<p style="margin: 6pt 0 0pt 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.0;">
+    February 15, 2026
+</p>
+
+<p style="margin: 0pt 0 0pt 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.0;">
+    Series: Read that Again: Church History You Didn't Learn in Sunday School
+</p>
+
+<p style="margin: 0pt 0 0pt 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.0;">
+    Title: Living Knowledge (Mary McLeod Bethune)
+</p>
+
+<p style="margin: 0 0 6pt 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.0;">
+    Text: Hosea 4:4-6
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    1. When you're trying to learn something new, what usually helps you the most? Reading? Listening? Hands-on experience? Trial and error? Learning alongside others?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    2. Name a teacher, mentor or guide who has shaped the way you see the world. What made their influence long-lasting?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    3. What stood out to you in the message titled Read That Again: Living Knowledge? How does learning more about Mary McLeod Bethune shape the way you hear the scripture passage or think about knowledge and faith?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    4. Read Hosea 4:4-6. What words or phrases catch your attention in this passage? How does the prophet describe the consequences of forgetting or neglecting knowledge?
+</p>
+
+            <p class="page-break-after" style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    5. Hosea connects the loss of knowledge with harm to individuals and communities. How do you hear this warning in our own time?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    6. Mary McLeod Bethune understood education as a sacred calling and a path toward dignity, freedom and leadership. How does her life help clarify what living knowledge might look like in practice?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    7. Read Proverbs 2:1-6. How does this passage describe the pursuit of wisdom? What's the difference between knowledge and wisdom? What role does God play in the giving of knowledge and the shaping of wisdom?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    8. Read James 1:22-25. How does this text connect knowing, doing and being transformed? What does it suggest about faith that moves beyond information?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    9. Where do you see opportunities today to cultivate learning that empowers, heals and builds up others? What part might God be calling you to play in the exchange of living knowledge in this community?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    10. How might your group pray for you as you live out wisdom that is rooted in love of God and neighbor?
+</p>
+
+</div>
+
+<div class="last-page-footer">
+Mission and Vision of Morning Star: To point people to the grace of God found in Jesus<br>
+through inspirational worship, radical inclusion and the alleviation of suffering.
+</div>
+
+</body>
+</html>
